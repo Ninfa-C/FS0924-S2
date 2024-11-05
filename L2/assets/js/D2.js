@@ -259,16 +259,47 @@ console.log (me)
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+delete me.skills[2]
+console.log (me)
+
+/* delete me.skills[2] */
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const numbers = []
+numbers[0]=1
+numbers[1]=2
+numbers[1]=1
+numbers[2]=3
+numbers[3]=4
+numbers[4]=5
+numbers[5]=6
+numbers[6]=7
+numbers[7]=8
+numbers[8]=9
+numbers[9]=10
+console.log (numbers)
+
+/* const numbers = []
+numbers[0]=1
+numbers[1]=2
+numbers[1]=1
+numbers[2]=3
+numbers[3]=4
+numbers[4]=5
+numbers[5]=6
+numbers[6]=7
+numbers[7]=8
+numbers[8]=9
+numbers[9]=10
+console.log (numbers)*/
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
+numbers[9]=100
+console.log (numbers)
+/* numbers[9]=100
+console.log (numbers) */
