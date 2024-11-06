@@ -257,4 +257,6 @@ let random = Math.floor(Math.random() * starWarsCharacters.length);
 
 let radomCharacther = starWarsCharacters[random]
 
+console.log ('Breve descrizione: '+ radomCharacther.name + ' è un personaggio della famosa saga cinematografica \'star Wars\'. É nat* nel ' + radomCharacther.birth_year + ', ha i capelli ' + radomCharacther.hair_color + 'e gli occhi ' + radomCharacther.eye_color + ', pesa ' + radomCharacther.mass + 'kg ed è alt* ' + radomCharacther.height)
+
 
