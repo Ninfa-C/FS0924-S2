@@ -15,13 +15,23 @@ let number2 = 25
 if(number1>number2){
   console.log (number1)
 }else{console.log(number2)}
+
+Correzione: manca la parte in cui i numeri sono uguali.
+
+if (number1 > number2) {
+  console.log(number1)
+} else if(number1==number2){
+  console.log(I numeri sono uguali)
+  } else { console.log(number2) }
+
+
  */
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
-const not5 = (number1 != 5) ? 'not equal' : 'equal'
+const not5 = (number1 !== 5) ? 'not equal' : 'equal'
 console.log(not5)
 
 /* const not5 = (number1 !=5)?'not equal':'equal'
@@ -117,20 +127,20 @@ console.log(totalShoppingCart) */
 */
 
 let n1 = 7
-let n2 = 8
-let n3 = 6
+let n2 = 9
+let n3 = 10
 
 if(n1>n2&&n2>n3){
-  console.log(n1+' '+n2+' '+n3)
+  console.log(n1,n2,n3)
 } else if (n1>n3&&n3>n2) {
-  console.log(n1+' '+n3+' '+n2)
+  console.log(n1,n3,n2)
 }else if (n2>n3&&n3>n1) {
-  console.log(n2+' '+n3+' '+n1)
+  console.log(n2,n3,n1)
 }else if (n2>n1&&n1>n3) {
-  console.log(n2+' '+n1+' '+n3)
+  console.log(n2,n1,n3)
 }else if (n3>n1&&n1>n2) {
-  console.log(n3+' '+n1+' '+n2)
-} else {console.log(n3+' '+n2+' '+n1)}
+  console.log(n3,n1,n2)
+} else {console.log(n3,n2,n1)}
 
 
 
@@ -149,20 +159,32 @@ if(n1>n2&&n2>n3){
 }else if (n3>n1&&n1>n2) {
   console.log(n3+' '+n1+' '+n2)
 } else {console.log(n3+' '+n2+' '+n1)}
+
+Correzione: per ottimizzarlo si sarebbero potuto concatenare gli if e mettere gli "=" insieme agli operatori di comparazione
+
+
  */
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-let prova = 4
+let prova = 4;
 
 console.log(typeof prova)
 
 /* 
 let prova = 3
 
-console.log(typeof prova) */
+console.log(typeof prova)
+
+Correzione
+
+if (typeof(prova) === number){
+console.log ('number')}
+else {console.log('not number)}
+
+*/
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
@@ -202,7 +224,7 @@ if (val < 5) {
   //oppure//
 
   let value = 3
-  if (value > 6 && value < 10) {
+  if (value >6 && value < 10) {
       console.log("Meno di 10");
     } else if (value < 5) {
       console.log("Meno di 5");
@@ -262,7 +284,9 @@ console.log (me)
 delete me.skills[2]
 console.log (me)
 
-/* delete me.skills[2] */
+/* delete me.skills[2]
+
+*/
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
